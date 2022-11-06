@@ -1,0 +1,451 @@
+* {
+    margin: 0px;
+    padding: 0;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.Hambur {
+    display: none;
+}
+
+
+.open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+@media (max-width: 375px) {
+    nav {
+        display: none;
+    }
+
+    .Bo {
+        display: none;
+    }
+
+    .Hambur {
+        display: inline-block;
+        margin-top: 30px;
+        position: absolute;
+        margin-left: 260px;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+    .Tarjeta {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*Barra del menú (el logo)*/
+.Barra_Menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+    background-image: url(../img/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: 800px -300px;
+    flex-wrap: wrap;
+}
+
+/*Categorías (poner las categorias una al lado de otra)*/
+.Menu {
+    display: flex;
+    gap: 20px;
+
+}
+
+/*Color, letra y demas a las categorias*/
+.Menu li a {
+    font-size: 16px;
+    color: #242E52;
+
+}
+
+.Menu li a:hover {
+    color: #6779b9;
+}
+
+
+/*Para hacer el boton que esta en el menu de arriba*/
+.Barra_Menu p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+    width: 134px;
+    height: 25px;
+    background: #F3603B;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    color: #FFFFFF;
+}
+
+.Barra_Menu p:hover {
+    background-color: #ec8a72;
+}
+
+
+/*Menú*/
+
+.Ca {
+    background-image: url(../img/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: -500px 700px;
+}
+
+.Productos {
+    position: center;
+    padding: 90px;
+    background-image: url(../img/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: 703px -300px;
+}
+
+.Produ1 h2 {
+    width: 400px;
+    font-size: 56px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: #232C50;
+}
+
+.Produ1 p {
+    width: 350px;
+    height: 90px;
+    font-weight: 500;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    color: #A0A0A0;
+}
+
+/*Boton de productos*/
+.Produ1 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 134px;
+    height: 44px;
+    color: #FFFFFF;
+    background: #F3603B;
+    box-shadow: 0px 4px 8px rgba(242, 97, 59, 0.5);
+    border-radius: 50px;
+}
+
+.Produ1 a:hover {
+    background-color: #ec8a72;
+}
+
+/*Para la imagen de las estadisticas*/
+.Produ {
+    display: flex;
+    gap: 150px;
+    width: 350px;
+    height: 350px;
+    margin-top: 10px;
+    margin-left: 10%;
+}
+
+/*El articulo que tiene la pregunta*/
+.Pro h1 {
+    width: 450px;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    font-size: 36px;
+    color: #232851;
+}
+
+.Pro p {
+    width: 337px;
+    height: 88px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    color: #A0A0A0;
+}
+
+/*Para los tres puntos*/
+.Produc {
+    display: flex;
+    gap: 200px;
+    margin-left: 60px;
+    margin-top: 100px;
+
+}
+
+/*Punto 1*/
+.Num1 h1 {
+    font-size: 16px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: #323851;
+}
+
+.Num1 p {
+    display: flex;
+    align-items: center;
+    height: 104px;
+    color: #B3B2B7;
+}
+
+.Num1 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    width: 10px;
+    height: 10px;
+    background: #F3603B;
+    border-radius: 30px;
+    position: absolute;
+    color: #FFFFFF;
+    right: 600px;
+}
+
+/*Parte de los integrantes/testimonios */
+.Perfil {
+    align-items: center;
+    left: 71px;
+    top: 1150px;
+    text-align: center;
+
+}
+
+.Titulo h1 {
+    justify-content: center;
+    left: 553px;
+    font-size: 39px;
+    line-height: 156%;
+    display: flex;
+    align-items: center;
+    color: #242E53;
+}
+
+
+/*Imagenes*/
+
+article.Persona {
+    width: 300px;
+}
+
+img.img-perfil {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 70px;
+}
+
+.Pers {
+    position: relative;
+
+}
+
+.Contenido {
+    text-align: center;
+    padding: 7px;
+    background: #FAFAFA;
+    top: 1550px;
+}
+
+.Contenido h2 {
+    margin-top: 60px;
+    font-size: 16px;
+    color: #3F4868;
+}
+
+.Contenido p {
+    text-align: left;
+    color: #B9B9C1;
+    line-height: 156%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.Tarjeta {
+    margin: 100px 90px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+/*Boton que esta debajo de las imagenes*/
+.Bot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    width: 134px;
+    height: 44px;
+    left: 585px;
+    top: 1530px;
+    background: #F3603B;
+    box-shadow: 0px 4px 8px rgba(243, 96, 59, 0.5);
+    border-radius: 50px;
+}
+
+.Bot a {
+    width: 73px;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+}
+
+.Bot:hover {
+    background-color: #ec8a72;
+}
+
+/*Pie de pagina*/
+
+.Suscripcion {
+    background-color: #F3613C;
+    display: flex;
+    justify-content: space-between;
+    height: 224px;
+    margin-top: 304px;
+}
+
+.Suscripcion p {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 143px;
+    height: 19px;
+    font-size: 13px;
+    line-height: 19px;
+    color: #A0A0A0;
+    background: #FFFFFF;
+    border-radius: 50px;
+    margin-left: 1050px;
+}
+
+.Suscripcion p:hover {
+    color: #F3603B;
+}
+
+.Suscripcion h2 {
+    margin-top: 30px;
+    width: 438px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 40px;
+    height: 23.74px;
+    position: absolute;
+    left: 12%;
+    top: 1870px;
+}
+
+/*Partes de las redes sociales*/
+
+.Fondo {
+    background-color: #000;
+    display: flex;
+}
+
+.red i {
+    color: #FFFFFF;
+    margin-top: 50px;
+    padding: 5px;
+}
+
+.red i:hover {
+    color: #F3603B;
+}
+
+.Redes {
+    margin-left: 160px;
+    margin-top: 90px;
+
+}
+
+.Opciones {
+    display: flex;
+    margin-top: 90px;
+    margin-left: 100px;
+    gap: 200px;
+}
+
+.Opciones li {
+    padding: 8px;
+}
+
+.Opciones li a {
+    color: #FAFAFA;
+}
+
+.Opciones li a:hover {
+    color: #F3603B;
+}
+
+.Opciones p {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 143px;
+    height: 19px;
+    font-size: 13px;
+    line-height: 19px;
+    color: #A0A0A0;
+    background: #FFFFFF;
+    border-radius: 50px;
+}
+
+.Go {
+    display: flex;
+    padding: 9px;
+    gap: 9px;
+
+}
+
+.Go p:hover {
+    color: #F3603B;
+}
+
+.Go h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 50px;
+    height: 20px;
+    font-size: 13px;
+    color: #FFFFFF;
+    background: #F3603B;
+    border-radius: 50px;
+}
+
+.Go h4:hover {
+    background-color: #ec8a72;
+}
